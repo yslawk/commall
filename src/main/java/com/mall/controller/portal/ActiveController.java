@@ -36,10 +36,11 @@ public class ActiveController {
     @ResponseBody
     @ApiOperation(value = "活动回顾列表添加", notes = "活动回顾列表添加")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "multipartFile", value = "图片添加", dataType = "File", required = true, paramType = "add")
+            @ApiImplicitParam(name = "multipartFile", value = "图片添加,可以进行多个图片上传", dataType = "File", required = true, paramType = "add")
     })
-    public boolean addActive(Active active, MultipartFile multipartFile) throws IllegalStateException, IOException {
-
+    public boolean addActive(Active active, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
+/*
+        //第一个方法代表单个文件上传
         if (multipartFile != null) {
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\active\\";
             String filename = multipartFile.getOriginalFilename();
@@ -47,7 +48,33 @@ public class ActiveController {
             String newfilename = active.getActiveId() + filename.substring(filename.lastIndexOf("."));
             File file = new File(path + newfilename);
             multipartFile.transferTo(file);
+        }*/
+        if (multipartFile != null) {
+            //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
+            String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\active\\" + active.getActiveId() + "\\";
+            File file2 = new File(path);
+            //判断这个文件夹是否存在，不存在就创建
+            if (!file2.exists()) {
+                file2.mkdirs();
+            }
+            System.out.println(active.getActiveId());
+            //判断文件上传是否为空，并且上传的长度
+            if (multipartFile != null && multipartFile.length > 0) {
+                for (int i = 0; i < multipartFile.length; i++) {
+                    //定义将文件以文件数组的方式存放
+                    MultipartFile file = multipartFile[i];
+                    //得到文件的原始名称
+                    String filename = file.getOriginalFilename();
+                    //按循环的方式进行将图片命名，但是文件夹的名称的命名方式是根据添加数据的ID进行储存
+                    String newFilename = i + filename.substring(filename.lastIndexOf("."));
+                    //图片存储在这个ID下的文件夹
+                    File file1 = new File(path + "\\" + newFilename);
+                    file.transferTo(file1);
+                    System.out.println(file);
+                }
+            }
         }
+
         System.out.println("添加成功");
         return activeService.addActive(active);
     }
@@ -67,22 +94,65 @@ public class ActiveController {
     @RequestMapping(value = "updateActive.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "活动回顾列表修改", notes = "活动回顾列表修改")
-    public boolean updateActive(Active active) {
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
+    })
+    public boolean updateActive(Active active, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
+        if (multipartFile != null) {
+            String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\active\\" + active.getActiveId() + "\\";
+            File file2 = new File(path);
+            if (!file2.exists()) {
+                file2.mkdirs();
+            }
+            if (multipartFile != null && multipartFile.length > 0) {
+                for (int i = 0; i < multipartFile.length; i++) {
+                    MultipartFile file = multipartFile[i];
+                    String filename = file.getOriginalFilename();
+                    String newFilename = i + filename.substring(filename.lastIndexOf("."));
+                    File file1 = new File(path + "\\" + newFilename);
+                    file.transferTo(file1);
+                }
+            }
+        }
         System.out.println("修改成功");
         return activeService.updateActive(active);
     }
-
     @RequestMapping(value = "deleteActive.do", method = RequestMethod.DELETE)
     @ResponseBody
     @ApiOperation(value = "活动回顾列表删除", notes = "活动回顾列表删除")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（修改：update；默认为查看）", required = false, paramType = "delete"),
-            @ApiImplicitParam(name = "id", value = "活动回顾id", required = true, paramType = "delete")
-
+            @ApiImplicitParam(name = "type", value = "类型（修改：update；默认为修改）", required = false, paramType = "delete"),
+            @ApiImplicitParam(name = "id", value = "活动回顾id,进行删除会连同该ID下的所有图片进行删除", required = true, paramType = "delete")
     })
     public boolean deleteActive(Integer activeId) {
 
-
+      /* if(multipartFile!=null){
+          // String path="C:\\Users\\yslaw\\IDEA\\jxx\\src\\main\\webapp\\img\\active\\";
+           //String filename=multipartFile.getName();
+           //File file=new File(path+filename);
+           multipartFile.delete();
+       }
+*/
+        System.out.println(activeId);
+        String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\active\\" + activeId;
+        File file = new File(path);
+        //file.delete();
+        if (!file.isDirectory()) {
+            file.delete();
+        } else {
+            String[] filelist = file.list();
+            for (int i = 0; i < filelist.length; i++) {
+                File file1 = new File(path + "\\" + filelist[i]);
+                //检查外层的文件夹，然后先进行里面的文件删除，再到外层
+                if (!file1.isDirectory()) {
+                    file1.delete();
+                } else if (file1.isDirectory()) {
+                    //file1(path+"\\"+filelist[i]);
+                }
+                file.delete();
+            }
+        }
+        System.out.println(activeId);
         System.out.println("删除成功");
         return activeService.deleteActive(activeId);
     }
