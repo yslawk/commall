@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,6 +35,9 @@ public class CultureController {
     @RequestMapping(value = "addCulture.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "文化板块添加", notes = "文化板块添加")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
+    })
     public boolean addCulture(Culture culture, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         /*
         //第一个方法代表单个文件上传
@@ -45,6 +49,10 @@ public class CultureController {
             File file = new File(path + newfilename);
             multipartFile.transferTo(file);
         }*/
+        cultureService.addCulture(culture);
+        List<String> sqlpath = new ArrayList<>();
+        String sqlpath1 = null;
+        String sqlpath2 = null;
         if (multipartFile != null) {
             //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\cultrue\\" + culture.getCultureId() + "\\";
@@ -67,16 +75,29 @@ public class CultureController {
                     File file1 = new File(path + "\\" + newFilename);
                     file.transferTo(file1);
                     System.out.println(file);
+                    sqlpath2 = "\\img\\cultrue\\" + culture.getCultureId() + "\\" + newFilename;
+                    sqlpath.add(sqlpath2);
                 }
             }
         }
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < sqlpath.size(); i++) {
+            sb.append(sqlpath);
+        }
+        sqlpath1 = sqlpath.toString();
+        System.out.println(sqlpath.toString());
+        System.out.println(sqlpath1);
+        cultureService.cultrueUrlimg(sqlpath1, culture.getCultureId());
         System.out.println("添加成功");
-        return cultureService.addCulture(culture);
+        return true;
     }
 
     @RequestMapping(value = "update.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "文化板块修改", notes = "文化板块修改")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
+    })
     public boolean updateCulture(Culture culture, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         if (multipartFile != null) {
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\cultrue\\" + culture.getCultureId() + "\\";
@@ -102,8 +123,7 @@ public class CultureController {
     @ResponseBody
     @ApiOperation(value = "文化板块删除", notes = "文化板块删除")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（删除：delete；默认为查看）", required = false, paramType = "delete"),
-            @ApiImplicitParam(name = "id", value = "文化id", required = true, paramType = "delete")
+            @ApiImplicitParam(name = "cultureId", value = "文化板块id,进行删除会连同该ID下的所有图片进行删除，类型（修改：delete；默认为删除）", required = true, paramType = "delete")
     })
     public boolean deleteCulture(Integer cultureId) {
         System.out.println(cultureId);
@@ -133,8 +153,7 @@ public class CultureController {
     @ResponseBody
     @ApiOperation(value = "文化板块查询单个", notes = "文化板块查询单个")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（查看：findName；默认为查看）", required = false, paramType = "query"),
-            @ApiImplicitParam(name = "cultureName", value = "文化板块名称", required = true, paramType = "query")
+            @ApiImplicitParam(name = "cultureName", value = "文化板块名称，默认为查看", required = true, paramType = "query")
     })
     public List<Culture> findCultureBycultureName(String cultureName) {
         System.out.println("查询单个");

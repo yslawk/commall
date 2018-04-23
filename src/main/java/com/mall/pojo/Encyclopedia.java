@@ -21,11 +21,15 @@ public class Encyclopedia {
     @ApiModelProperty(value = "介绍")
     private String encyclopediaIntroduction;
 
-    public Encyclopedia(Integer encyclopediaId, String encyclopediaGenre, String encyclopediaTitle, String encyclopediaIntroduction) {
+    @ApiModelProperty(value = "图片地址")
+    private String encyclopediaUrl;
+
+    public Encyclopedia(Integer encyclopediaId, String encyclopediaGenre, String encyclopediaTitle, String encyclopediaIntroduction, String encyclopediaUrl) {
         this.encyclopediaId = encyclopediaId;
         this.encyclopediaGenre = encyclopediaGenre;
         this.encyclopediaTitle = encyclopediaTitle;
         this.encyclopediaIntroduction = encyclopediaIntroduction;
+        this.encyclopediaUrl = encyclopediaUrl;
     }
 
     public Encyclopedia() {
@@ -62,5 +66,13 @@ public class Encyclopedia {
 
     public void setEncyclopediaIntroduction(String encyclopediaIntroduction) {
         this.encyclopediaIntroduction = encyclopediaIntroduction == null ? null : encyclopediaIntroduction.trim();
+    }
+
+    public String getEncyclopediaUrl() {
+        return encyclopediaUrl;
+    }
+
+    public void setEncyclopediaUrl(String encyclopediaUrl) {
+        this.encyclopediaUrl = encyclopediaUrl == null ? null : encyclopediaUrl.trim();
     }
 }

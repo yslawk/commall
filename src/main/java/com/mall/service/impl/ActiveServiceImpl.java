@@ -85,4 +85,11 @@ public class ActiveServiceImpl implements ActiveService {
         PageInfo<Active> pageResult = new PageInfo<>(activesList);
         return pageResult;
     }
+
+    @Override
+    public boolean activeUrlimg(String activeUrl, Integer activeId) {
+        boolean flag = false;
+        activeMapper.activea(activeUrl, activeId);
+        return false;
+    }
 }

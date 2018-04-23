@@ -1,5 +1,6 @@
 package com.mall.pojo;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -21,11 +22,15 @@ public class Introduction {
     @ApiModelProperty(value = "主题")
     private String introductionTitle;
 
-    public Introduction(Integer introductionId, String introductionDescribe, String introductionGenre, String introductionTitle) {
+    @ApiModelProperty(value = "图片地址")
+    private String intoductionUrl;
+
+    public Introduction(Integer introductionId, String introductionDescribe, String introductionGenre, String introductionTitle, String intoductionUrl) {
         this.introductionId = introductionId;
         this.introductionDescribe = introductionDescribe;
         this.introductionGenre = introductionGenre;
         this.introductionTitle = introductionTitle;
+        this.intoductionUrl = intoductionUrl;
     }
 
     public Introduction() {
@@ -62,5 +67,13 @@ public class Introduction {
 
     public void setIntroductionTitle(String introductionTitle) {
         this.introductionTitle = introductionTitle == null ? null : introductionTitle.trim();
+    }
+
+    public String getIntoductionUrl() {
+        return intoductionUrl;
+    }
+
+    public void setIntoductionUrl(String intoductionUrl) {
+        this.intoductionUrl = intoductionUrl == null ? null : intoductionUrl.trim();
     }
 }

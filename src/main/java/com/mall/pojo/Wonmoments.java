@@ -18,10 +18,14 @@ public class Wonmoments {
     @ApiModelProperty(value = "内容")
     private String wonmomentContent;
 
-    public Wonmoments(Integer wonmomentId, String wonmomentTitle, String wonmomentContent) {
+    @ApiModelProperty(value = "图片地址")
+    private String wonmomentUrl;
+
+    public Wonmoments(Integer wonmomentId, String wonmomentTitle, String wonmomentContent, String wonmomentUrl) {
         this.wonmomentId = wonmomentId;
         this.wonmomentTitle = wonmomentTitle;
         this.wonmomentContent = wonmomentContent;
+        this.wonmomentUrl = wonmomentUrl;
     }
 
     public Wonmoments() {
@@ -50,5 +54,13 @@ public class Wonmoments {
 
     public void setWonmomentContent(String wonmomentContent) {
         this.wonmomentContent = wonmomentContent == null ? null : wonmomentContent.trim();
+    }
+
+    public String getWonmomentUrl() {
+        return wonmomentUrl;
+    }
+
+    public void setWonmomentUrl(String wonmomentUrl) {
+        this.wonmomentUrl = wonmomentUrl == null ? null : wonmomentUrl.trim();
     }
 }

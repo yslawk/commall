@@ -33,4 +33,6 @@ public interface PlaceService {
      */
     PageInfo<Place> findAll(int pageNum, int pageSize);
 
+    //添加图片路径
+    boolean placeUrlimg(String placeUrl, Integer placeId);
 }

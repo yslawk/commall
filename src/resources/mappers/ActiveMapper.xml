@@ -6,10 +6,11 @@
             <idArg column="active_id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
             <arg column="active_name" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="active_content" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="active_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
-    active_id, active_name, active_content
+        active_id, active_name, active_content, active_url
   </sql>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
@@ -31,11 +32,13 @@
     where active_id = #{activeId,jdbcType=INTEGER}
   </delete>
     <insert id="insert" parameterType="com.mall.pojo.Active">
-    insert into active (active_id, active_name, active_content
-      )
-    values (#{activeId,jdbcType=INTEGER}, #{activeName,jdbcType=VARCHAR}, #{activeContent,jdbcType=VARCHAR}
-      )
-  </insert>
+        insert into active (active_id, active_name, active_content,
+        active_url)
+        values (#{activeId,jdbcType=INTEGER}, #{activeName,jdbcType=VARCHAR}, #{activeContent,jdbcType=VARCHAR},
+        #{activeUrl,jdbcType=VARCHAR})
+    </insert>
+
+
     <insert id="insertSelective" parameterType="com.mall.pojo.Active">
         insert into active
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -48,6 +51,9 @@
             <if test="activeContent != null">
                 active_content,
             </if>
+            <if test="activeUrl != null">
+                active_url,
+            </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="activeId != null">
@@ -58,6 +64,9 @@
             </if>
             <if test="activeContent != null">
                 #{activeContent,jdbcType=VARCHAR},
+            </if>
+            <if test="activeUrl != null">
+                #{activeUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
@@ -70,13 +79,30 @@
             <if test="activeContent != null">
                 active_content = #{activeContent,jdbcType=VARCHAR},
             </if>
+            <if test="activeUrl != null">
+                active_url = #{activeUrl,jdbcType=VARCHAR},
+            </if>
         </set>
         where active_id = #{activeId,jdbcType=INTEGER}
     </update>
+
     <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Active">
-    update active
-    set active_name = #{activeName,jdbcType=VARCHAR},
-      active_content = #{activeContent,jdbcType=VARCHAR}
-    where active_id = #{activeId,jdbcType=INTEGER}
-  </update>
+        update active
+        set active_name = #{activeName,jdbcType=VARCHAR},
+        active_content = #{activeContent,jdbcType=VARCHAR},
+        active_url = #{activeUrl,jdbcType=VARCHAR}
+        where active_id = #{activeId,jdbcType=INTEGER}
+    </update>
+
+    <update id="activea" parameterType="com.mall.pojo.Active">
+        update active
+        <set>
+
+            <if test="activeUrl != null">
+                active_url = #{activeUrl,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where active_id = #{activeId,jdbcType=INTEGER}
+    </update>
+
 </mapper>

@@ -31,4 +31,7 @@ public interface NewsService {
      * 查询所有
      */
     PageInfo<News> findAll(int pageNum, int pageSize);
+
+    //添加图片路径
+    boolean newsUrlimg(String newUrl, Integer newsId);
 }

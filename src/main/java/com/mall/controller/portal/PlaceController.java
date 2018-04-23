@@ -33,6 +33,9 @@ public class PlaceController {
     @RequestMapping(value = "addPlace.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "极限场地添加", notes = "极限场地添加")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片添加,可以进行多个图片上传", dataType = "File", required = true, paramType = "add")
+    })
     private boolean addPlace(Place place, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         if (multipartFile != null) {
             //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
@@ -66,6 +69,9 @@ public class PlaceController {
     @RequestMapping(value = "updatePlace.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "极限场地修改", notes = "极限场地修改")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
+    })
     private boolean updatePlace(Place place, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         if (multipartFile != null) {
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\place\\" + place.getPlaceId() + "\\";
@@ -91,8 +97,7 @@ public class PlaceController {
     @ResponseBody
     @ApiOperation(value = "极限场地删除", notes = "极限场地删除")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（删除：delete；默认为删除）", required = false, paramType = "delete"),
-            @ApiImplicitParam(name = "placeId", value = "极限场地id", required = true, paramType = "delete")
+            @ApiImplicitParam(name = "placeId", value = "极限场地id,进行删除会连同该ID下的所有图片进行删除，类型（修改：delete；默认为删除）", required = true, paramType = "delete")
     })
     private boolean deletePlace(Integer placeId) {
         String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\place\\" + placeId;
@@ -121,8 +126,7 @@ public class PlaceController {
     @ResponseBody
     @ApiOperation(value = "极限场地查询单个", notes = "极限场地查询单个")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（查看：findByplaceName；默认为查看）", required = false, paramType = "query"),
-            @ApiImplicitParam(name = "findByplaceName", value = "极限场地名称", required = true, paramType = "query")
+            @ApiImplicitParam(name = "findByplaceName", value = "极限场地名称，默认为查看", required = true, paramType = "query")
     })
     private List<Place> findByplaceName(String placeName) {
         System.out.println("查询单个");

@@ -1,6 +1,7 @@
 package com.mall.dao;
 
 import com.mall.pojo.Active;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +21,6 @@ public interface ActiveMapper {
     List<Active> selectByactiveName(String activeName);
 
     List<Active> findAll();
+
+    int activea(@Param("activeUrl") String activeUrl, @Param("activeId") Integer activeId);
 }

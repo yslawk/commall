@@ -8,10 +8,11 @@
             <arg column="place_address" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="place_introduction" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="place_time" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+            <arg column="place_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
-        place_id, place_name, place_address, place_introduction, place_time
+        place_id, place_name, place_address, place_introduction, place_time, place_url
     </sql>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
@@ -36,9 +37,11 @@
     </delete>
     <insert id="insert" parameterType="com.mall.pojo.Place">
         insert into place (place_id, place_name, place_address,
-        place_introduction, place_time)
+        place_introduction, place_time, place_url
+        )
         values (#{placeId,jdbcType=INTEGER}, #{placeName,jdbcType=VARCHAR}, #{placeAddress,jdbcType=VARCHAR},
-        #{placeIntroduction,jdbcType=VARCHAR}, #{placeTime,jdbcType=TIMESTAMP})
+        #{placeIntroduction,jdbcType=VARCHAR}, #{placeTime,jdbcType=TIMESTAMP}, #{placeUrl,jdbcType=VARCHAR}
+        )
     </insert>
     <insert id="insertSelective" parameterType="com.mall.pojo.Place">
         insert into place
@@ -58,6 +61,9 @@
             <if test="placeTime != null">
                 place_time,
             </if>
+            <if test="placeUrl != null">
+                place_url,
+            </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="placeId != null">
@@ -74,6 +80,9 @@
             </if>
             <if test="placeTime != null">
                 #{placeTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="placeUrl != null">
+                #{placeUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
@@ -92,6 +101,9 @@
             <if test="placeTime != null">
                 place_time = #{placeTime,jdbcType=TIMESTAMP},
             </if>
+            <if test="placeUrl != null">
+                place_url = #{placeUrl,jdbcType=VARCHAR},
+            </if>
         </set>
         where place_id = #{placeId,jdbcType=INTEGER}
     </update>
@@ -100,7 +112,19 @@
         set place_name = #{placeName,jdbcType=VARCHAR},
         place_address = #{placeAddress,jdbcType=VARCHAR},
         place_introduction = #{placeIntroduction,jdbcType=VARCHAR},
-        place_time = #{placeTime,jdbcType=TIMESTAMP}
+        place_time = #{placeTime,jdbcType=TIMESTAMP},
+        place_url = #{placeUrl,jdbcType=VARCHAR}
+        where place_id = #{placeId,jdbcType=INTEGER}
+    </update>
+
+    <update id="placePhoto" parameterType="com.mall.pojo.Place">
+        update place
+        <set>
+
+            <if test="placeUrl != null">
+                place_url = #{placeUrl,jdbcType=VARCHAR},
+            </if>
+        </set>
         where place_id = #{placeId,jdbcType=INTEGER}
     </update>
 </mapper>

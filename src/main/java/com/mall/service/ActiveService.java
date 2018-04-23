@@ -37,4 +37,7 @@ public interface ActiveService {
      * 查询所有
      */
     PageInfo<Active> findAllActive(Integer pageNum, Integer pageSize);
+
+    //添加图片路径
+    boolean activeUrlimg(String activeUrl, Integer activeId);
 }

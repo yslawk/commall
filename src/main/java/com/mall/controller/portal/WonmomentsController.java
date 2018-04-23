@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,15 +34,23 @@ public class WonmomentsController {
     @RequestMapping(value = "addWonmoments.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "精彩瞬间添加", notes = "精彩瞬间添加")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片添加,可以进行多个图片上传", dataType = "File", required = true, paramType = "add")
+    })
     private boolean addWonmoments(Wonmoments wonmoments, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
+        wonmomentsService.addWonmoments(wonmoments);
+        List<String> sqlpath = new ArrayList<>();
+        String sqlpath1 = null;
+        String sqlpath2 = null;
         if (multipartFile != null) {
             //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
-            String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\wonmoment\\" + wonmoments.getWonmomentId() + "\\";
+            String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\wonmoments\\" + wonmoments.getWonmomentId() + "\\";
             File file2 = new File(path);
             //判断这个文件夹是否存在，不存在就创建
             if (!file2.exists()) {
                 file2.mkdirs();
             }
+            System.out.println("12222122211");
             System.out.println(wonmoments.getWonmomentId());
             //判断文件上传是否为空，并且上传的长度
             if (multipartFile != null && multipartFile.length > 0) {
@@ -55,17 +64,30 @@ public class WonmomentsController {
                     //图片存储在这个ID下的文件夹
                     File file1 = new File(path + "\\" + newFilename);
                     file.transferTo(file1);
+                    sqlpath2 = "\\img\\wonmoments\\" + wonmoments.getWonmomentId() + "\\" + newFilename;
+                    sqlpath.add(sqlpath2);
                     System.out.println(file);
                 }
             }
         }
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < sqlpath.size(); i++) {
+            sb.append(sqlpath);
+        }
+        sqlpath1 = sqlpath.toString();
+        System.out.println(sqlpath.toString());
+        System.out.println(sqlpath1);
+        wonmomentsService.wonmomentsUrlimg(sqlpath1, wonmoments.getWonmomentId());
         System.out.println("添加成功");
-        return wonmomentsService.addWonmoments(wonmoments);
+        return true;
     }
 
     @RequestMapping(value = "updateWonmoments.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "精彩瞬间修改", notes = "精彩瞬间修改")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
+    })
     private boolean updateWonmoments(Wonmoments wonmoments, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         if (multipartFile != null) {
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\wonmoment\\" + wonmoments.getWonmomentId() + "\\";
@@ -90,6 +112,9 @@ public class WonmomentsController {
     @RequestMapping(value = "deleteWonmoments.do", method = RequestMethod.DELETE)
     @ResponseBody
     @ApiOperation(value = "精彩瞬间删除", notes = "精彩瞬间删除")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "wonmomentId", value = "精彩瞬间id,进行删除会连同该ID下的所有图片进行删除，类型（修改：delete；默认为删除）", required = true, paramType = "delete")
+    })
     private boolean deleteWonmoments(Integer wonmomentId) {
         System.out.println(wonmomentId);
         String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\wonmoment\\" + wonmomentId;
@@ -118,8 +143,7 @@ public class WonmomentsController {
     @ResponseBody
     @ApiOperation(value = "精彩瞬间查询单个", notes = "精彩瞬间查询单个")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（查看：findByWonmomentsName；默认为查看）", required = false, paramType = "query"),
-            @ApiImplicitParam(name = "findBywonmomentTitle", value = "精彩瞬间主题", required = true, paramType = "query")
+            @ApiImplicitParam(name = "findBywonmomentTitle", value = "精彩瞬间主题，默认为查看", required = true, paramType = "query")
     })
     private List<Wonmoments> findBywonmomentTitle(String wonmomentsTitle) {
         System.out.println("查询单个");

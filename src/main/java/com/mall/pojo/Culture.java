@@ -20,13 +20,16 @@ public class Culture {
     @ApiModelProperty(value = "介绍")
     private String cultrueIntrodution;
 
-    public Culture(Integer cultureId, String cultureGenre, String cultureName, String cultrueIntrodution) {
+    @ApiModelProperty(value = "图片")
+    private String cultrueUrl;
+
+    public Culture(Integer cultureId, String cultureGenre, String cultureName, String cultrueIntrodution, String cultrueUrl) {
         this.cultureId = cultureId;
         this.cultureGenre = cultureGenre;
         this.cultureName = cultureName;
         this.cultrueIntrodution = cultrueIntrodution;
+        this.cultrueUrl = cultrueUrl;
     }
-
     public Culture() {
         super();
     }
@@ -61,5 +64,13 @@ public class Culture {
 
     public void setCultrueIntrodution(String cultrueIntrodution) {
         this.cultrueIntrodution = cultrueIntrodution == null ? null : cultrueIntrodution.trim();
+    }
+
+    public String getCultrueUrl() {
+        return cultrueUrl;
+    }
+
+    public void setCultrueUrl(String cultrueUrl) {
+        this.cultrueUrl = cultrueUrl == null ? null : cultrueUrl.trim();
     }
 }

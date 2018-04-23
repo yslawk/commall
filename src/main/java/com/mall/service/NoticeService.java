@@ -32,4 +32,6 @@ public interface NoticeService {
      */
     PageInfo<Notice> findAll(int pageNum, int pageSize);
 
+    //添加图片路径
+    boolean noticeUrlimg(String noticeUrl, Integer noticeId);
 }

@@ -72,4 +72,11 @@ public class WonmomentsServiceImpl implements WonmomentsService {
         PageInfo<Wonmoments> pageResult = new PageInfo<>(wonmomentsList);
         return pageResult;
     }
+
+    @Override
+    public boolean wonmomentsUrlimg(String wonmomentUrl, Integer wonmomentId) {
+        boolean flag = false;
+        wonmomentsMapper.wonmomentsPhoto(wonmomentUrl, wonmomentId);
+        return flag;
+    }
 }

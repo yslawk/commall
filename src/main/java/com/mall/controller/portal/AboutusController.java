@@ -45,8 +45,9 @@ public class AboutusController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "AboutusId", value = "id", required = true, paramType = "query")
     })
-    public boolean deleteAboutus(Integer AboutusId) {
+    public boolean deleteAboutus(Integer aboutusId) {
+        System.out.println(aboutusId);
         System.out.println("删除成功");
-        return aboutusService.deleteAboutus(AboutusId);
+        return aboutusService.deleteAboutus(aboutusId);
     }
 }

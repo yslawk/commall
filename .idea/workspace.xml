@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3323b9bc-f467-4c71-a849-961608a1fa92" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/1/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/wonmoments/5/0.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX.war" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/classes/com/mall/common/ResponseCode.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/classes/com/mall/common/ServerResponse.class" />
@@ -130,6 +132,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/lib/swagger-annotations-1.5.10.jar" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/lib/swagger-models-1.5.10.jar" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/lib/tomcat-servlet-api-7.0.64.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/img/wonmoments/5/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/img/wonmoments/5/1.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mall/common/ResponseCode.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mall/common/ServerResponse.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mall/common/TokenCache$1.class" />
@@ -195,7 +199,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mall/util/FTPUtil.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mall/util/MD5Util.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/mall/util/PropertiesUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/META-INF/MANIFEST.MF" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/classes/applicationContext-datasource.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/JX/WEB-INF/classes/applicationContext.xml" />
@@ -236,17 +239,17 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/mappers/WonmomentsMapper.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/mmall.properties" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/zfbinfo.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/active/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/active/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/滑雪_002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/滑雪_003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/滑雪_004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/骑行_0001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/骑行_0002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/骑行_0003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/JX/img/encyclopedia/骑行_0004.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/active/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/active/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/滑雪_002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/滑雪_003.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/滑雪_004.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/骑行_0004.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/AboutusController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/AboutusController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ContactController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ContactController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java" />
@@ -254,6 +257,50 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/PlaceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/PlaceController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/WonmomentsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/WonmomentsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/ActiveMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/ActiveMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/CultureMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/CultureMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/EncyclopediaMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/EncyclopediaMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/IntroductionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/IntroductionMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/NewsMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/NewsMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/NoticeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/NoticeMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/PlaceMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/PlaceMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/dao/WonmomentsMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/dao/WonmomentsMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Active.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Active.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Culture.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Culture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Encyclopedia.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Encyclopedia.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Introduction.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Introduction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/News.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/News.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Notice.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Notice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Place.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Place.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Wonmoments.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/pojo/Wonmoments.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/ActiveService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/ActiveService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/CultureService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/CultureService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/EncycloperdiaService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/EncycloperdiaService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/IntroductionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/IntroductionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/NewsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/NewsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/NoticeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/NoticeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/PlaceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/PlaceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/WonmomentsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/WonmomentsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/ActiveServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/ActiveServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/EncycloperdiaServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/EncycloperdiaServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/IntroductionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/IntroductionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NewsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NewsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NoticeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NoticeServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/PlaceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/PlaceServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/WonmomentsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/WonmomentsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/cultureServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mall/service/impl/cultureServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/ActiveMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/ActiveMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/CultureMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/CultureMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/EncyclopediaMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/EncyclopediaMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/IntroductionMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/IntroductionMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/NewsMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/NewsMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/NoticeMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/NoticeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/PlaceMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/PlaceMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/mappers/WonmomentsMapper.xml" afterPath="$PROJECT_DIR$/src/resources/mappers/WonmomentsMapper.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/img/active/20/0.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/active/5/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/img/active/20/1.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/active/5/0.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/img/active/20/2.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/wonmoments/5/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/骑行_0001.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/img/encyclopedia/1/0.jpg" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -267,21 +314,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NewsController.java">
+      <file leaf-file-name="ActiveController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2133">
-              <caret line="96" column="35" lean-forward="false" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Notice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="864">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -290,18 +327,18 @@
       <file leaf-file-name="NoticeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+            <state relative-caret-position="1620">
+              <caret line="78" column="65" lean-forward="false" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/PlaceController.java">
+      <file leaf-file-name="WonmomentsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/WonmomentsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="116" column="35" lean-forward="false" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+            <state relative-caret-position="405">
+              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -310,28 +347,18 @@
       <file leaf-file-name="Wonmoments.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Wonmoments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="459">
+              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WonmomentsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/WonmomentsController.java">
+      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WonmomentsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/WonmomentsMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="1539">
+              <caret line="75" column="38" lean-forward="false" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -340,28 +367,48 @@
       <file leaf-file-name="WonmomentsServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/WonmomentsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="1890">
+              <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WonmomentsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/WonmomentsService.java">
+      <file leaf-file-name="CultureController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="1836">
+              <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Place.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Place.java">
+      <file leaf-file-name="IntroductionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="1593">
+              <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EncycloperdiaController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Encyclopedia.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Encyclopedia.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -392,57 +439,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Aboutus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/common/config/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/AboutusService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/AboutusServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/AboutusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ContactController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Active.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Culture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Encyclopedia.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Introduction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/News.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Notice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Place.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Wonmoments.java" />
+        <option value="$PROJECT_DIR$/src/resources/mappers/ActiveMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/ActiveMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/ActiveService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/ActiveServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/EncyclopediaMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/IntroductionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/NewsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/NoticeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/PlaceMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/WonmomentsMapper.java" />
         <option value="$PROJECT_DIR$/src/resources/mappers/CultureMapper.xml" />
         <option value="$PROJECT_DIR$/src/resources/mappers/EncyclopediaMapper.xml" />
         <option value="$PROJECT_DIR$/src/resources/mappers/IntroductionMapper.xml" />
         <option value="$PROJECT_DIR$/src/resources/mappers/NewsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ContactController.java" />
         <option value="$PROJECT_DIR$/src/resources/mappers/NoticeMapper.xml" />
         <option value="$PROJECT_DIR$/src/resources/mappers/PlaceMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/AboutusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/AboutusService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/AboutusController.java" />
         <option value="$PROJECT_DIR$/src/resources/mappers/WonmomentsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/PlaceMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/NoticeMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/NewsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/IntroductionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/EncyclopediaMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/CultureMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/ActiveMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/CultureService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/cultureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/CultureMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/EncycloperdiaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/IntroductionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/NewsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/NoticeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/PlaceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/WonmomentsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/cultureServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/EncycloperdiaServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/IntroductionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NewsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NoticeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/PlaceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/util/LunController.java" />
-        <option value="$PROJECT_DIR$/src/resources/mappers/AboutusMapper.xml" />
-        <option value="$PROJECT_DIR$/src/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/ActiveService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/ActiveServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/resources/mappers/ActiveMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/pojo/Active.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/NewsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NewsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/PlaceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/dao/WonmomentsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mall/service/WonmomentsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/service/impl/WonmomentsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/WonmomentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java" />
       </list>
     </option>
   </component>
@@ -560,7 +607,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -583,7 +632,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -600,11 +649,149 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jxx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jxx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jxx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jxx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,7 +800,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15180266" />
     <property name="project.structure.side.proportion" value="0.24022989" />
-    <property name="last_opened_file_path" value="E:/Program File(86)/springmvc" />
+    <property name="last_opened_file_path" value="G:/极限空间/jxx" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -1137,7 +1324,17 @@
       <workItem from="1523840797263" duration="4425000" />
       <workItem from="1523957367791" duration="25636000" />
       <workItem from="1524105676241" duration="15562000" />
-      <workItem from="1524142212080" duration="1812000" />
+      <workItem from="1524142212080" duration="2021000" />
+      <workItem from="1524186506999" duration="13000" />
+      <workItem from="1524187705700" duration="226000" />
+      <workItem from="1524188537398" duration="40000" />
+      <workItem from="1524188607553" duration="64000" />
+      <workItem from="1524188696462" duration="858000" />
+      <workItem from="1524189834605" duration="37000" />
+      <workItem from="1524189904170" duration="16246000" />
+      <workItem from="1524452213217" duration="852000" />
+      <workItem from="1524463888261" duration="11808000" />
+      <workItem from="1524477292554" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="极限第一次提交">
       <created>1524043682175</created>
@@ -1146,18 +1343,25 @@
       <option name="project" value="LOCAL" />
       <updated>1524043682175</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="极限第二次提交">
+      <created>1524144074588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524144074588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115177000" />
+    <option name="totallyTimeSpent" value="145939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.316847" sideWeight="0.17754173" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34728032" sideWeight="0.18108974" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3414264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1175,10 +1379,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38075313" sideWeight="0.82245827" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34728032" sideWeight="0.81891024" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25587606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27403846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1199,7 +1403,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="极限第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="极限第一次提交" />
+    <MESSAGE value="极限第二次提交" />
+    <MESSAGE value="极限第三次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="极限第三次提交" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1211,333 +1417,409 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resources/datasource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/AboutusServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7290">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/ActiveMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/ActiveService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/ActiveServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/94859f43-dcbd-41d9-a50a-aecaf8939424.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/627075f4-2e30-46ed-97d5-53fa671ad522.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/resources/mappers/ActiveMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <marker date="1524043656132" expanded="true" signature="775:900" ph="select from active" />
-            <marker date="1524043656132" expanded="true" signature="1019:1148" ph="select from active" />
-            <marker date="1524043656132" expanded="true" signature="1219:1240" ph="SELECT * FRO... active" />
-            <marker date="1524043656132" expanded="true" signature="1328:1397" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/13.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/AboutusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Aboutus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/16/0.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/16/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/16/2.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/19/2.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/19/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/19/0.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Encyclopedia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/EncycloperdiaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Culture.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Video.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="-83">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Active.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/20/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/20/0.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/active/20/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/ContactMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="85" column="13" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="104" column="82" lean-forward="false" selection-start-line="104" selection-start-column="82" selection-end-line="104" selection-end-column="82" />
-          <folding />
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Introduction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Active.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
-          <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/NewsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/NewsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/mappers/NewsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <marker date="1524043657584" expanded="true" signature="767:886" ph="select from news" />
-            <marker date="1524043657584" expanded="true" signature="1007:1132" ph="select from news" />
-            <marker date="1524043657584" expanded="true" signature="1207:1225" ph="select * fro... news" />
-            <marker date="1524043657584" expanded="true" signature="1319:1386" ph="delete from " />
-            <marker date="1524043657584" expanded="true" signature="1469:1647" ph="insert into news... " />
-            <marker date="1524043657584" expanded="true" signature="2593:2930" ph="update news " />
-            <marker date="1524043657584" expanded="true" signature="3025:3198" ph="update news " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NewsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="96" column="35" lean-forward="false" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Notice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="412">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/VideoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        <state relative-caret-position="108">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/ActiveMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/CultureMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="104" column="34" lean-forward="false" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/EncyclopediaMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/EncyclopediaMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="111" column="37" lean-forward="false" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/IntroductionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/IntroductionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/NewsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/NewsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="102" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/NoticeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Place.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="277">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/PlaceController.java">
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/NoticeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="116" column="35" lean-forward="false" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+        <state relative-caret-position="700">
+          <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Wonmoments.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/PlaceMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="567">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/PlaceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="127" column="34" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/ActiveMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="106" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/mappers/WonmomentsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2808">
+          <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Culture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/CultureMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/ActiveService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/CultureService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/EncycloperdiaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/IntroductionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/NoticeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/PlaceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/dao/WonmomentsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="567">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/WonmomentsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="754">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/ActiveServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/cultureServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="80" column="20" lean-forward="false" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/EncycloperdiaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="80" column="20" lean-forward="false" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/IntroductionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/NewsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/NoticeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/PlaceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/service/impl/WonmomentsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="1890">
+          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="75" column="38" lean-forward="false" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="78" column="65" lean-forward="false" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Wonmoments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/ActiveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/CultureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="87" column="47" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/IntroductionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="77" column="47" lean-forward="false" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/pojo/Encyclopedia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/WonmomentsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        <state relative-caret-position="405">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mall/controller/portal/EncycloperdiaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="135" column="34" lean-forward="false" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
           <folding />
         </state>
       </provider>

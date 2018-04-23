@@ -30,7 +30,7 @@ public class ContactController {
         return contactService.addContact(contact);
     }
 
-    @RequestMapping(value = "updateContact", method = RequestMethod.POST)
+    @RequestMapping(value = "updateContact.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "联系信息修改", notes = "联系信息修改")
     public boolean updateContact(Contact contact) {
@@ -38,7 +38,7 @@ public class ContactController {
         return contactService.updateContact(contact);
     }
 
-    @RequestMapping(value = "deleteContact", method = RequestMethod.DELETE)
+    @RequestMapping(value = "deleteContact.do", method = RequestMethod.DELETE)
     @ResponseBody
     @ApiOperation(value = "联系信息删除", notes = "联系信息删除")
     @ApiImplicitParams({

@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,6 +34,9 @@ public class EncycloperdiaController {
     @RequestMapping(value = "addEncycloperdia.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "极限百科添加", notes = "极限百科添加")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片添加,可以进行多个图片上传", dataType = "File", required = true, paramType = "add")
+    })
     private boolean addEncycloperdia(Encyclopedia encyclopedia, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         /*
         //第一个方法代表单个文件上传
@@ -44,6 +48,10 @@ public class EncycloperdiaController {
             File file = new File(path + newfilename);
             multipartFile.transferTo(file);
         }*/
+        encycloperdiaService.addEncyclopedia(encyclopedia);
+        List<String> sqlpath = new ArrayList<>();
+        String sqlpath1 = null;
+        String sqlpath2 = null;
         if (multipartFile != null) {
             //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\encyclopedia\\" + encyclopedia.getEncyclopediaId() + "\\";
@@ -52,6 +60,7 @@ public class EncycloperdiaController {
             if (!file2.exists()) {
                 file2.mkdirs();
             }
+            System.out.println("12222122211");
             System.out.println(encyclopedia.getEncyclopediaId());
             //判断文件上传是否为空，并且上传的长度
             if (multipartFile != null && multipartFile.length > 0) {
@@ -65,45 +74,29 @@ public class EncycloperdiaController {
                     //图片存储在这个ID下的文件夹
                     File file1 = new File(path + "\\" + newFilename);
                     file.transferTo(file1);
+                    sqlpath2 = "\\img\\encyclopedia\\" + encyclopedia.getEncyclopediaId() + "\\" + newFilename;
+                    sqlpath.add(sqlpath2);
                     System.out.println(file);
                 }
             }
         }
-        System.out.println("添加成功");
-        return encycloperdiaService.addEncyclopedia(encyclopedia);
-    }
-
-    @RequestMapping(value = "updateEncycloperdia.do", method = RequestMethod.POST)
-    @ResponseBody
-    @ApiOperation(value = "极限百科修改", notes = "极限百科修改")
-    private boolean updateEncycloperdia(Encyclopedia encyclopedia, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
-        if (multipartFile != null) {
-            String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\encyclopedia\\" + encyclopedia.getEncyclopediaId() + "\\";
-            File file2 = new File(path);
-            if (!file2.exists()) {
-                file2.mkdirs();
-            }
-            if (multipartFile != null && multipartFile.length > 0) {
-                for (int i = 0; i < multipartFile.length; i++) {
-                    MultipartFile file = multipartFile[i];
-                    String filename = file.getOriginalFilename();
-                    String newFilename = i + filename.substring(filename.lastIndexOf("."));
-                    File file1 = new File(path + "\\" + newFilename);
-                    file.transferTo(file1);
-                }
-            }
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < sqlpath.size(); i++) {
+            sb.append(sqlpath);
         }
-
-        System.out.println("修改成功");
-        return encycloperdiaService.updateEncyclopedia(encyclopedia);
+        sqlpath1 = sqlpath.toString();
+        System.out.println(sqlpath.toString());
+        System.out.println(sqlpath1);
+        encycloperdiaService.encyclopediaUrlimg(sqlpath1, encyclopedia.getEncyclopediaId());
+        System.out.println("添加成功");
+        return true;
     }
 
     @RequestMapping(value = "deleteEncycloperdia.do", method = RequestMethod.DELETE)
     @ResponseBody
     @ApiOperation(value = "极限百科删除", notes = "极限百科删除")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（删除：delete；默认为删除）", required = false, paramType = "delete"),
-            @ApiImplicitParam(name = "id", value = "极限id", required = true, paramType = "delete")
+            @ApiImplicitParam(name = "encyclopediaId", value = "极限百科id,进行删除会连同该ID下的所有图片进行删除，类型（修改：delete；默认为删除）", required = true, paramType = "delete")
     })
     private boolean deleteEncycloperdia(Integer encyclopediaId) {
         System.out.println();
@@ -133,8 +126,7 @@ public class EncycloperdiaController {
     @ResponseBody
     @ApiOperation(value = "极限百科查询单个", notes = "极限百科查询单个")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（查看：findName；默认为查看）", required = false, paramType = "query"),
-            @ApiImplicitParam(name = "encyclopediaName", value = "极限百科名称", required = true, paramType = "query")
+            @ApiImplicitParam(name = "encyclopediaName", value = "极限百科名称，默认为查看", required = true, paramType = "query")
     })
     private List<Encyclopedia> findEncyclopediaByencyclopedia(String encyclopediaName) {
         System.out.println("查询单个");

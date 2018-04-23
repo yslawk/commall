@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -49,6 +50,10 @@ public class ActiveController {
             File file = new File(path + newfilename);
             multipartFile.transferTo(file);
         }*/
+        activeService.addActive(active);
+        List<String> sqlpath = new ArrayList<>();
+        String sqlpath1 = null;
+        String sqlpath2 = null;
         if (multipartFile != null) {
             //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\active\\" + active.getActiveId() + "\\";
@@ -57,6 +62,7 @@ public class ActiveController {
             if (!file2.exists()) {
                 file2.mkdirs();
             }
+            System.out.println("12222122211");
             System.out.println(active.getActiveId());
             //判断文件上传是否为空，并且上传的长度
             if (multipartFile != null && multipartFile.length > 0) {
@@ -70,13 +76,22 @@ public class ActiveController {
                     //图片存储在这个ID下的文件夹
                     File file1 = new File(path + "\\" + newFilename);
                     file.transferTo(file1);
+                    sqlpath2 = "\\img\\active\\" + active.getActiveId() + "\\" + newFilename;
+                    sqlpath.add(sqlpath2);
                     System.out.println(file);
                 }
             }
         }
-
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < sqlpath.size(); i++) {
+            sb.append(sqlpath);
+        }
+        sqlpath1 = sqlpath.toString();
+        System.out.println(sqlpath.toString());
+        System.out.println(sqlpath1);
+        activeService.activeUrlimg(sqlpath1, active.getActiveId());
         System.out.println("添加成功");
-        return activeService.addActive(active);
+        return true;
     }
 
     /*
@@ -121,8 +136,7 @@ public class ActiveController {
     @ResponseBody
     @ApiOperation(value = "活动回顾列表删除", notes = "活动回顾列表删除")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（修改：update；默认为修改）", required = false, paramType = "delete"),
-            @ApiImplicitParam(name = "id", value = "活动回顾id,进行删除会连同该ID下的所有图片进行删除", required = true, paramType = "delete")
+            @ApiImplicitParam(name = "activeId", value = "活动回顾id,进行删除会连同该ID下的所有图片进行删除，类型（修改：delete；默认为删除）", required = true, paramType = "delete")
     })
     public boolean deleteActive(Integer activeId) {
 
@@ -161,8 +175,7 @@ public class ActiveController {
     @ResponseBody
     @ApiOperation(value = "活动回顾查询", notes = "活动回顾查询")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（查看：find；默认为查看）", required = false, paramType = "query"),
-            @ApiImplicitParam(name = "id", value = "活动回顾id", required = true, paramType = "query")
+            @ApiImplicitParam(name = "id", value = "活动回顾id，类型（查看：find；默认为查看）", required = true, paramType = "query")
     })
     public List<Active> findActiveByactiveName(String activeName) {
         System.out.println("查询单个开始");

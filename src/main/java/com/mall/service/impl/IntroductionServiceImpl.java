@@ -72,4 +72,11 @@ public class IntroductionServiceImpl implements IntroductionService {
         PageInfo<Introduction> pageResult = new PageInfo<>(introductionList);
         return pageResult;
     }
+
+    @Override
+    public boolean introductionUrlimg(String introductionUrl, Integer introductionId) {
+        boolean flag = false;
+        introductionMapper.introductionPhoto(introductionUrl, introductionId);
+        return flag;
+    }
 }

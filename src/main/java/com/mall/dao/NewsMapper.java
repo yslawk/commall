@@ -1,6 +1,7 @@
 package com.mall.dao;
 
 import com.mall.pojo.News;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +21,6 @@ public interface NewsMapper {
     int updateByPrimaryKey(News record);
 
     List<News> findAll();
+
+    int newsPhoto(@Param("newUrl") String newUrl, @Param("newsId") Integer newsId);
 }

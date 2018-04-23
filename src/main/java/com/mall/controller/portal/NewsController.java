@@ -17,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,7 +33,14 @@ public class NewsController {
     @RequestMapping(value = "addNews.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "赛事新闻添加", notes = "赛事新闻添加")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片添加,可以进行多个图片上传", dataType = "File", required = true, paramType = "add")
+    })
     private boolean addNews(News news, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
+        newsService.addNews(news);
+        List<String> sqlpath = new ArrayList<>();
+        String sqlpath1 = null;
+        String sqlpath2 = null;
         if (multipartFile != null) {
             //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\news\\" + news.getNewsId() + "\\";
@@ -41,6 +49,7 @@ public class NewsController {
             if (!file2.exists()) {
                 file2.mkdirs();
             }
+            System.out.println("12222122211");
             System.out.println(news.getNewsId());
             //判断文件上传是否为空，并且上传的长度
             if (multipartFile != null && multipartFile.length > 0) {
@@ -54,17 +63,30 @@ public class NewsController {
                     //图片存储在这个ID下的文件夹
                     File file1 = new File(path + "\\" + newFilename);
                     file.transferTo(file1);
+                    sqlpath2 = "\\img\\news\\" + news.getNewsId() + "\\" + newFilename;
+                    sqlpath.add(sqlpath2);
                     System.out.println(file);
                 }
             }
         }
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < sqlpath.size(); i++) {
+            sb.append(sqlpath);
+        }
+        sqlpath1 = sqlpath.toString();
+        System.out.println(sqlpath.toString());
+        System.out.println(sqlpath1);
+        newsService.newsUrlimg(sqlpath1, news.getNewsId());
         System.out.println("添加成功");
-        return newsService.addNews(news);
+        return true;
     }
 
     @RequestMapping(value = "updateNews.do", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "赛事新闻修改", notes = "赛事新闻修改")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
+    })
     private boolean updateNews(News news, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
         if (multipartFile != null) {
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\news\\" + news.getNewsId() + "\\";
@@ -90,8 +112,7 @@ public class NewsController {
     @ResponseBody
     @ApiOperation(value = "赛事新闻删除", notes = "赛事新闻删除")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（删除：delete；默认为删除）", required = false, paramType = "delete"),
-            @ApiImplicitParam(name = "NewsId", value = "赛事新闻id", required = true, paramType = "delete")
+            @ApiImplicitParam(name = "newsId", value = "赛事新闻id,进行删除会连同该ID下的所有图片进行删除，类型（修改：delete；默认为删除）", required = true, paramType = "delete")
     })
     private boolean deleteNews(Integer newsId) {
         System.out.println(newsId);
@@ -121,8 +142,7 @@ public class NewsController {
     @ResponseBody
     @ApiOperation(value = "赛事新闻查询单个", notes = "赛事新闻查询单个")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "type", value = "类型（查看：findName；默认为查看）", required = false, paramType = "query"),
-            @ApiImplicitParam(name = "newsTitle", value = "赛事新闻主题", required = true, paramType = "query")
+            @ApiImplicitParam(name = "newsTitle", value = "赛事新闻主题，默认为查看", required = true, paramType = "query")
     })
     private List<News> findBynewsTitle(String newsTitle) {
         System.out.println("查询单个");

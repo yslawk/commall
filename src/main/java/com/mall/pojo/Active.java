@@ -18,6 +18,16 @@ public class Active {
     @ApiModelProperty(value = "活动内容")
     private String activeContent;
 
+    @ApiModelProperty(value = "图片地址")
+    private String activeUrl;
+
+    public Active(Integer activeId, String activeName, String activeContent, String activeUrl) {
+        this.activeId = activeId;
+        this.activeName = activeName;
+        this.activeContent = activeContent;
+        this.activeUrl = activeUrl;
+    }
+
 
     public Active() {
         super();
@@ -47,4 +57,11 @@ public class Active {
         this.activeContent = activeContent == null ? null : activeContent.trim();
     }
 
+    public String getActiveUrl() {
+        return activeUrl;
+    }
+
+    public void setActiveUrl(String activeUrl) {
+        this.activeUrl = activeUrl == null ? null : activeUrl.trim();
+    }
 }

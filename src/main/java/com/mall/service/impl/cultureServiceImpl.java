@@ -73,4 +73,11 @@ public class cultureServiceImpl implements CultureService {
 
         return pageResult;
     }
+
+    @Override
+    public boolean cultrueUrlimg(String cultrueUrl, Integer cultureId) {
+        boolean flag = false;
+        cultureMapper.cultruePhoto(cultrueUrl, cultureId);
+        return flag;
+    }
 }

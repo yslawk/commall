@@ -17,10 +17,14 @@ public class News {
     @ApiModelProperty(value = "内容")
     private String newsContent;
 
-    public News(Integer newsId, String newsTitle, String newsContent) {
+    @ApiModelProperty(value = "图片地址")
+    private String newUrl;
+
+    public News(Integer newsId, String newsTitle, String newsContent, String newUrl) {
         this.newsId = newsId;
         this.newsTitle = newsTitle;
         this.newsContent = newsContent;
+        this.newUrl = newUrl;
     }
 
     public News() {
@@ -49,5 +53,13 @@ public class News {
 
     public void setNewsContent(String newsContent) {
         this.newsContent = newsContent == null ? null : newsContent.trim();
+    }
+
+    public String getNewUrl() {
+        return newUrl;
+    }
+
+    public void setNewUrl(String newUrl) {
+        this.newUrl = newUrl == null ? null : newUrl.trim();
     }
 }

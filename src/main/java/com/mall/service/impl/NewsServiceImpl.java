@@ -74,4 +74,11 @@ public class NewsServiceImpl implements NewsService {
 
         return pageResult;
     }
+
+    @Override
+    public boolean newsUrlimg(String newUrl, Integer newsId) {
+        boolean flag = false;
+        newsMapper.newsPhoto(newUrl, newsId);
+        return flag;
+    }
 }

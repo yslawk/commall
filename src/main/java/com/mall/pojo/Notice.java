@@ -17,10 +17,14 @@ public class Notice {
     @ApiModelProperty(value = "内容")
     private String noticeContent;
 
-    public Notice(Integer noticeId, String noticeTitle, String noticeContent) {
+    @ApiModelProperty(value = "图片地址")
+    private String noticeUrl;
+
+    public Notice(Integer noticeId, String noticeTitle, String noticeContent, String noticeUrl) {
         this.noticeId = noticeId;
         this.noticeTitle = noticeTitle;
         this.noticeContent = noticeContent;
+        this.noticeUrl = noticeUrl;
     }
 
     public Notice() {
@@ -49,5 +53,13 @@ public class Notice {
 
     public void setNoticeContent(String noticeContent) {
         this.noticeContent = noticeContent == null ? null : noticeContent.trim();
+    }
+
+    public String getNoticeUrl() {
+        return noticeUrl;
+    }
+
+    public void setNoticeUrl(String noticeUrl) {
+        this.noticeUrl = noticeUrl == null ? null : noticeUrl.trim();
     }
 }

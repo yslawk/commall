@@ -35,4 +35,7 @@ public interface CultureService {
      */
     PageInfo<Culture> findAllCulture(int pageNum, int pageSize);
 
+    //添加图片路径
+
+    boolean cultrueUrlimg(String cultrueUrl, Integer cultureId);
 }

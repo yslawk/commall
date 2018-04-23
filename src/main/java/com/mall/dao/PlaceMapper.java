@@ -1,6 +1,7 @@
 package com.mall.dao;
 
 import com.mall.pojo.Place;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +21,6 @@ public interface PlaceMapper {
     List<Place> selectByPrimaryName(String placeName);
 
     List<Place> findAll();
+
+    int placePhoto(@Param("placeUrl") String placeUrl, @Param("placeId") Integer placeId);
 }

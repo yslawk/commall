@@ -6,10 +6,11 @@
             <idArg column="notice_id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
             <arg column="notice_title" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="notice_content" jdbcType="VARCHAR" javaType="java.lang.String"/>
+            <arg column="notice_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
-        notice_id, notice_title, notice_content
+        notice_id, notice_title, notice_content, notice_url
     </sql>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
@@ -33,10 +34,10 @@
         where notice_id = #{noticeId,jdbcType=INTEGER}
     </delete>
     <insert id="insert" parameterType="com.mall.pojo.Notice">
-        insert into notice (notice_id, notice_title, notice_content
-        )
-        values (#{noticeId,jdbcType=INTEGER}, #{noticeTitle,jdbcType=VARCHAR}, #{noticeContent,jdbcType=VARCHAR}
-        )
+        insert into notice (notice_id, notice_title, notice_content,
+        notice_url)
+        values (#{noticeId,jdbcType=INTEGER}, #{noticeTitle,jdbcType=VARCHAR}, #{noticeContent,jdbcType=VARCHAR},
+        #{noticeUrl,jdbcType=VARCHAR})
     </insert>
     <insert id="insertSelective" parameterType="com.mall.pojo.Notice">
         insert into notice
@@ -50,6 +51,9 @@
             <if test="noticeContent != null">
                 notice_content,
             </if>
+            <if test="noticeUrl != null">
+                notice_url,
+            </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="noticeId != null">
@@ -60,6 +64,9 @@
             </if>
             <if test="noticeContent != null">
                 #{noticeContent,jdbcType=VARCHAR},
+            </if>
+            <if test="noticeUrl != null">
+                #{noticeUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
@@ -72,13 +79,28 @@
             <if test="noticeContent != null">
                 notice_content = #{noticeContent,jdbcType=VARCHAR},
             </if>
+            <if test="noticeUrl != null">
+                notice_url = #{noticeUrl,jdbcType=VARCHAR},
+            </if>
         </set>
         where notice_id = #{noticeId,jdbcType=INTEGER}
     </update>
     <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Notice">
         update notice
         set notice_title = #{noticeTitle,jdbcType=VARCHAR},
-        notice_content = #{noticeContent,jdbcType=VARCHAR}
+        notice_content = #{noticeContent,jdbcType=VARCHAR},
+        notice_url = #{noticeUrl,jdbcType=VARCHAR}
+        where notice_id = #{noticeId,jdbcType=INTEGER}
+    </update>
+
+    <update id="noticePhoto" parameterType="com.mall.pojo.Notice">
+        update notice
+        <set>
+
+            <if test="noticeUrl != null">
+                notice_url = #{noticeUrl,jdbcType=VARCHAR},
+            </if>
+        </set>
         where notice_id = #{noticeId,jdbcType=INTEGER}
     </update>
 </mapper>

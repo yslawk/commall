@@ -73,4 +73,11 @@ public class NoticeServiceImpl implements NoticeService {
 
         return pageResult;
     }
+
+    @Override
+    public boolean noticeUrlimg(String noticeUrl, Integer noticeId) {
+        boolean flag = false;
+        noticeMapper.noticePhoto(noticeUrl, noticeId);
+        return flag;
+    }
 }

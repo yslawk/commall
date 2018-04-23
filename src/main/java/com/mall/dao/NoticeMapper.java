@@ -1,6 +1,7 @@
 package com.mall.dao;
 
 import com.mall.pojo.Notice;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -21,4 +22,6 @@ public interface NoticeMapper {
     int updateByPrimaryKey(Notice record);
 
     List<Notice> findAll();
+
+    int noticePhoto(@Param("noticeUrl") String noticeUrl, @Param("noticeId") Integer noticeId);
 }

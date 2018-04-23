@@ -25,13 +25,18 @@ public class Place {
     @ApiModelProperty(value = "开放时间")
     private Date placeTime;
 
-    public Place(Integer placeId, String placeName, String placeAddress, String placeIntroduction, Date placeTime) {
+    @ApiModelProperty(value = "图片地址")
+    private String placeUrl;
+
+    public Place(Integer placeId, String placeName, String placeAddress, String placeIntroduction, Date placeTime, String placeUrl) {
         this.placeId = placeId;
         this.placeName = placeName;
         this.placeAddress = placeAddress;
         this.placeIntroduction = placeIntroduction;
         this.placeTime = placeTime;
+        this.placeUrl = placeUrl;
     }
+
 
     public Place() {
         super();
@@ -75,5 +80,13 @@ public class Place {
 
     public void setPlaceTime(Date placeTime) {
         this.placeTime = placeTime;
+    }
+
+    public String getPlaceUrl() {
+        return placeUrl;
+    }
+
+    public void setPlaceUrl(String placeUrl) {
+        this.placeUrl = placeUrl == null ? null : placeUrl.trim();
     }
 }

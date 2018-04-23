@@ -73,4 +73,11 @@ public class PlaceServiceImpl implements PlaceService {
         PageInfo<Place> pageResult = new PageInfo<>(placeList);
         return pageResult;
     }
+
+    @Override
+    public boolean placeUrlimg(String placeUrl, Integer placeId) {
+        boolean flag = false;
+        placeMapper.placePhoto(placeUrl, placeId);
+        return flag;
+    }
 }

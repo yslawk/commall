@@ -73,4 +73,12 @@ public class EncycloperdiaServiceImpl implements EncycloperdiaService {
         return pageResult;
 
     }
+
+    @Override
+    public boolean encyclopediaUrlimg(String encyclopediaUrl, Integer encyclopediaId) {
+        boolean flag = false;
+        encyclopediaMapper.encyclopediaPhoto(encyclopediaUrl, encyclopediaId);
+        return flag;
+
+    }
 }

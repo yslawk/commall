@@ -1,6 +1,7 @@
 package com.mall.dao;
 
 import com.mall.pojo.Wonmoments;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +21,6 @@ public interface WonmomentsMapper {
     List<Wonmoments> selectByPrimaryTitle(String wonmomentTitle);
 
     List<Wonmoments> findAll();
+
+    int wonmomentsPhoto(@Param("wonmomentUrl") String wonmomentUrl, @Param("wonmomentId") Integer wonmomentId);
 }

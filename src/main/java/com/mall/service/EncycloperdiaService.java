@@ -34,4 +34,8 @@ public interface EncycloperdiaService {
      * 查询所有
      */
     PageInfo<Encyclopedia> findAll(int pageNum, int pageSize);
+
+    //添加图片路径
+
+    boolean encyclopediaUrlimg(String encyclopediaUrl, Integer encyclopediaId);
 }
