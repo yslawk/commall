@@ -23,12 +23,12 @@ public class Place {
     private String placeIntroduction;
 
     @ApiModelProperty(value = "开放时间")
-    private Date placeTime;
+    private String placeTime;
 
     @ApiModelProperty(value = "图片地址")
     private String placeUrl;
 
-    public Place(Integer placeId, String placeName, String placeAddress, String placeIntroduction, Date placeTime, String placeUrl) {
+    public Place(Integer placeId, String placeName, String placeAddress, String placeIntroduction, String placeTime, String placeUrl) {
         this.placeId = placeId;
         this.placeName = placeName;
         this.placeAddress = placeAddress;
@@ -74,13 +74,14 @@ public class Place {
         this.placeIntroduction = placeIntroduction == null ? null : placeIntroduction.trim();
     }
 
-    public Date getPlaceTime() {
+    public String getPlaceTime() {
         return placeTime;
     }
 
-    public void setPlaceTime(Date placeTime) {
-        this.placeTime = placeTime;
+    public void setPlaceTime(String placeTime) {
+        this.placeTime = placeTime == null ? null : placeTime.trim();
     }
+
 
     public String getPlaceUrl() {
         return placeUrl;

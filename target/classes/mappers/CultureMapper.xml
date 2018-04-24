@@ -7,7 +7,7 @@
             <arg column="culture_genre" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="culture_name" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="cultrue_introdution" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="cultrue_url" jdbcType="VARCHAR" javaType="java.lang.String" />
+            <arg column="cultrue_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
@@ -32,81 +32,81 @@
         delete from culture
         where culture_id = #{cultureId,jdbcType=INTEGER}
     </delete>
-    <insert id="insert" parameterType="com.mall.pojo.Culture" >
+    <insert id="insert" parameterType="com.mall.pojo.Culture">
         insert into culture (culture_id, culture_genre, culture_name,
         cultrue_introdution, cultrue_url)
         values (#{cultureId,jdbcType=INTEGER}, #{cultureGenre,jdbcType=VARCHAR}, #{cultureName,jdbcType=VARCHAR},
         #{cultrueIntrodution,jdbcType=VARCHAR}, #{cultrueUrl,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.mall.pojo.Culture" >
+    <insert id="insertSelective" parameterType="com.mall.pojo.Culture">
         insert into culture
-        <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="cultureId != null" >
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="cultureId != null">
                 culture_id,
             </if>
-            <if test="cultureGenre != null" >
+            <if test="cultureGenre != null">
                 culture_genre,
             </if>
-            <if test="cultureName != null" >
+            <if test="cultureName != null">
                 culture_name,
             </if>
-            <if test="cultrueIntrodution != null" >
+            <if test="cultrueIntrodution != null">
                 cultrue_introdution,
             </if>
-            <if test="cultrueUrl != null" >
+            <if test="cultrueUrl != null">
                 cultrue_url,
             </if>
         </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="cultureId != null" >
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="cultureId != null">
                 #{cultureId,jdbcType=INTEGER},
             </if>
-            <if test="cultureGenre != null" >
+            <if test="cultureGenre != null">
                 #{cultureGenre,jdbcType=VARCHAR},
             </if>
-            <if test="cultureName != null" >
+            <if test="cultureName != null">
                 #{cultureName,jdbcType=VARCHAR},
             </if>
-            <if test="cultrueIntrodution != null" >
+            <if test="cultrueIntrodution != null">
                 #{cultrueIntrodution,jdbcType=VARCHAR},
             </if>
-            <if test="cultrueUrl != null" >
+            <if test="cultrueUrl != null">
                 #{cultrueUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Culture" >
+    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Culture">
         update culture
-        <set >
-            <if test="cultureGenre != null" >
+        <set>
+            <if test="cultureGenre != null">
                 culture_genre = #{cultureGenre,jdbcType=VARCHAR},
             </if>
-            <if test="cultureName != null" >
+            <if test="cultureName != null">
                 culture_name = #{cultureName,jdbcType=VARCHAR},
             </if>
-            <if test="cultrueIntrodution != null" >
+            <if test="cultrueIntrodution != null">
                 cultrue_introdution = #{cultrueIntrodution,jdbcType=VARCHAR},
             </if>
-            <if test="cultrueUrl != null" >
+            <if test="cultrueUrl != null">
                 cultrue_url = #{cultrueUrl,jdbcType=VARCHAR},
             </if>
         </set>
         where culture_id = #{cultureId,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Culture" >
-    update culture
-    set culture_genre = #{cultureGenre,jdbcType=VARCHAR},
-      culture_name = #{cultureName,jdbcType=VARCHAR},
-      cultrue_introdution = #{cultrueIntrodution,jdbcType=VARCHAR},
-      cultrue_url = #{cultrueUrl,jdbcType=VARCHAR}
-    where culture_id = #{cultureId,jdbcType=INTEGER}
-  </update>
-
-    <update id="cultruePhoto"  parameterType="com.mall.pojo.Culture">
+    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Culture">
         update culture
-        <set >
+        set culture_genre = #{cultureGenre,jdbcType=VARCHAR},
+        culture_name = #{cultureName,jdbcType=VARCHAR},
+        cultrue_introdution = #{cultrueIntrodution,jdbcType=VARCHAR},
+        cultrue_url = #{cultrueUrl,jdbcType=VARCHAR}
+        where culture_id = #{cultureId,jdbcType=INTEGER}
+    </update>
 
-            <if test="cultrueUrl != null" >
+    <update id="cultruePhoto" parameterType="com.mall.pojo.Culture">
+        update culture
+        <set>
+
+            <if test="cultrueUrl != null">
                 cultrue_url = #{cultrueUrl,jdbcType=VARCHAR},
             </if>
         </set>

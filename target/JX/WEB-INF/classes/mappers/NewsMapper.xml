@@ -6,7 +6,7 @@
             <idArg column="news_id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
             <arg column="news_title" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="news_content" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="new_url" jdbcType="VARCHAR" javaType="java.lang.String" />
+            <arg column="new_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
@@ -31,71 +31,71 @@
         delete from news
         where news_id = #{newsId,jdbcType=INTEGER}
     </delete>
-    <insert id="insert" parameterType="com.mall.pojo.News" >
+    <insert id="insert" parameterType="com.mall.pojo.News">
         insert into news (news_id, news_title, news_content,
         new_url)
         values (#{newsId,jdbcType=INTEGER}, #{newsTitle,jdbcType=VARCHAR}, #{newsContent,jdbcType=VARCHAR},
         #{newUrl,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.mall.pojo.News" >
+    <insert id="insertSelective" parameterType="com.mall.pojo.News">
         insert into news
-        <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="newsId != null" >
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="newsId != null">
                 news_id,
             </if>
-            <if test="newsTitle != null" >
+            <if test="newsTitle != null">
                 news_title,
             </if>
-            <if test="newsContent != null" >
+            <if test="newsContent != null">
                 news_content,
             </if>
-            <if test="newUrl != null" >
+            <if test="newUrl != null">
                 new_url,
             </if>
         </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="newsId != null" >
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="newsId != null">
                 #{newsId,jdbcType=INTEGER},
             </if>
-            <if test="newsTitle != null" >
+            <if test="newsTitle != null">
                 #{newsTitle,jdbcType=VARCHAR},
             </if>
-            <if test="newsContent != null" >
+            <if test="newsContent != null">
                 #{newsContent,jdbcType=VARCHAR},
             </if>
-            <if test="newUrl != null" >
+            <if test="newUrl != null">
                 #{newUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.News" >
+    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.News">
         update news
-        <set >
-            <if test="newsTitle != null" >
+        <set>
+            <if test="newsTitle != null">
                 news_title = #{newsTitle,jdbcType=VARCHAR},
             </if>
-            <if test="newsContent != null" >
+            <if test="newsContent != null">
                 news_content = #{newsContent,jdbcType=VARCHAR},
             </if>
-            <if test="newUrl != null" >
+            <if test="newUrl != null">
                 new_url = #{newUrl,jdbcType=VARCHAR},
             </if>
         </set>
         where news_id = #{newsId,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.News" >
-    update news
-    set news_title = #{newsTitle,jdbcType=VARCHAR},
-      news_content = #{newsContent,jdbcType=VARCHAR},
-      new_url = #{newUrl,jdbcType=VARCHAR}
-    where news_id = #{newsId,jdbcType=INTEGER}
-  </update>
-
-    <update id="newsPhoto"  parameterType="com.mall.pojo.News">
+    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.News">
         update news
-        <set >
+        set news_title = #{newsTitle,jdbcType=VARCHAR},
+        news_content = #{newsContent,jdbcType=VARCHAR},
+        new_url = #{newUrl,jdbcType=VARCHAR}
+        where news_id = #{newsId,jdbcType=INTEGER}
+    </update>
 
-            <if test="newUrl != null" >
+    <update id="newsPhoto" parameterType="com.mall.pojo.News">
+        update news
+        <set>
+
+            <if test="newUrl != null">
                 new_url = #{newUrl,jdbcType=VARCHAR},
             </if>
         </set>

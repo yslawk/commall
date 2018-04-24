@@ -18,6 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -113,24 +114,49 @@ public class ActiveController {
             @ApiImplicitParam(name = "multipartFile", value = "图片修改,直接进行图片选择，按照选择的位置行排然后进行修改", dataType = "File", required = true, paramType = "update")
     })
     public boolean updateActive(Active active, @RequestParam MultipartFile[] multipartFile) throws IllegalStateException, IOException {
+        activeService.updateActive(active);
+        List<String> sqlpath = new ArrayList<>();
+        String sqlpath1 = null;
+        String sqlpath2 = null;
         if (multipartFile != null) {
+            //定义存储路径，这个路径可以随意改动，文件夹的名称的命名方式是根据添加数据的ID进行储存
             String path = "E:\\software\\jxx\\src\\main\\webapp\\img\\active\\" + active.getActiveId() + "\\";
             File file2 = new File(path);
+            //判断这个文件夹是否存在，不存在就创建
             if (!file2.exists()) {
                 file2.mkdirs();
             }
+            System.out.println("12222122211");
+            System.out.println(active.getActiveId());
+            //判断文件上传是否为空，并且上传的长度
             if (multipartFile != null && multipartFile.length > 0) {
                 for (int i = 0; i < multipartFile.length; i++) {
+                    //定义将文件以文件数组的方式存放
                     MultipartFile file = multipartFile[i];
+                    //得到文件的原始名称
                     String filename = file.getOriginalFilename();
+                    //按循环的方式进行将图片命名，但是文件夹的名称的命名方式是根据添加数据的ID进行储存
                     String newFilename = i + filename.substring(filename.lastIndexOf("."));
+                    //图片存储在这个ID下的文件夹
                     File file1 = new File(path + "\\" + newFilename);
                     file.transferTo(file1);
+                    sqlpath2 = "\\img\\active\\" + active.getActiveId() + "\\" + newFilename;
+                    sqlpath.add(sqlpath2);
+                    System.out.println(file);
                 }
             }
         }
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < sqlpath.size(); i++) {
+            sb.append(sqlpath);
+        }
+        sqlpath1 = sqlpath.toString();
+        System.out.println(sqlpath.toString());
+        System.out.println(sqlpath1);
+        activeService.activeUrlimg(sqlpath1, active.getActiveId());
         System.out.println("修改成功");
-        return activeService.updateActive(active);
+        return true;
+
     }
     @RequestMapping(value = "deleteActive.do", method = RequestMethod.DELETE)
     @ResponseBody
@@ -178,6 +204,9 @@ public class ActiveController {
             @ApiImplicitParam(name = "id", value = "活动回顾id，类型（查看：find；默认为查看）", required = true, paramType = "query")
     })
     public List<Active> findActiveByactiveName(String activeName) {
+        System.out.println(activeName);
+//        String pa=new String((activeName.getBytes("iso-8859-1")),"utf-8");
+//        System.out.println(pa);
         System.out.println("查询单个开始");
         return activeService.findActiveByactiveName(activeName);
     }

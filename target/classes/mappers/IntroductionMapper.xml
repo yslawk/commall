@@ -7,7 +7,7 @@
             <arg column="introduction_describe" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="introduction_genre" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="introduction_title" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="intoduction_url" jdbcType="VARCHAR" javaType="java.lang.String" />
+            <arg column="intoduction_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
@@ -32,7 +32,7 @@
         delete from introduction
         where introduction_id = #{introductionId,jdbcType=INTEGER}
     </delete>
-    <insert id="insert" parameterType="com.mall.pojo.Introduction" >
+    <insert id="insert" parameterType="com.mall.pojo.Introduction">
         insert into introduction (introduction_id, introduction_describe,
         introduction_genre, introduction_title, intoduction_url
         )
@@ -40,62 +40,62 @@
         #{introductionGenre,jdbcType=VARCHAR}, #{introductionTitle,jdbcType=VARCHAR}, #{intoductionUrl,jdbcType=VARCHAR}
         )
     </insert>
-    <insert id="insertSelective" parameterType="com.mall.pojo.Introduction" >
+    <insert id="insertSelective" parameterType="com.mall.pojo.Introduction">
         insert into introduction
-        <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="introductionId != null" >
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="introductionId != null">
                 introduction_id,
             </if>
-            <if test="introductionDescribe != null" >
+            <if test="introductionDescribe != null">
                 introduction_describe,
             </if>
-            <if test="introductionGenre != null" >
+            <if test="introductionGenre != null">
                 introduction_genre,
             </if>
-            <if test="introductionTitle != null" >
+            <if test="introductionTitle != null">
                 introduction_title,
             </if>
-            <if test="intoductionUrl != null" >
+            <if test="intoductionUrl != null">
                 intoduction_url,
             </if>
         </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="introductionId != null" >
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="introductionId != null">
                 #{introductionId,jdbcType=INTEGER},
             </if>
-            <if test="introductionDescribe != null" >
+            <if test="introductionDescribe != null">
                 #{introductionDescribe,jdbcType=VARCHAR},
             </if>
-            <if test="introductionGenre != null" >
+            <if test="introductionGenre != null">
                 #{introductionGenre,jdbcType=VARCHAR},
             </if>
-            <if test="introductionTitle != null" >
+            <if test="introductionTitle != null">
                 #{introductionTitle,jdbcType=VARCHAR},
             </if>
-            <if test="intoductionUrl != null" >
+            <if test="intoductionUrl != null">
                 #{intoductionUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Introduction" >
+    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Introduction">
         update introduction
-        <set >
-            <if test="introductionDescribe != null" >
+        <set>
+            <if test="introductionDescribe != null">
                 introduction_describe = #{introductionDescribe,jdbcType=VARCHAR},
             </if>
-            <if test="introductionGenre != null" >
+            <if test="introductionGenre != null">
                 introduction_genre = #{introductionGenre,jdbcType=VARCHAR},
             </if>
-            <if test="introductionTitle != null" >
+            <if test="introductionTitle != null">
                 introduction_title = #{introductionTitle,jdbcType=VARCHAR},
             </if>
-            <if test="intoductionUrl != null" >
+            <if test="intoductionUrl != null">
                 intoduction_url = #{intoductionUrl,jdbcType=VARCHAR},
             </if>
         </set>
         where introduction_id = #{introductionId,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Introduction" >
+    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Introduction">
         update introduction
         set introduction_describe = #{introductionDescribe,jdbcType=VARCHAR},
         introduction_genre = #{introductionGenre,jdbcType=VARCHAR},
@@ -104,14 +104,15 @@
         where introduction_id = #{introductionId,jdbcType=INTEGER}
     </update>
 
-    <update id="introductionPhoto"  parameterType="com.mall.pojo.Introduction">
+    <update id="introductionPhoto" parameterType="com.mall.pojo.Introduction">
         update introduction
-        <set >
+        <set>
 
-            <if test="intoductionUrl != null" >
+            <if test="intoductionUrl != null">
                 intoduction_url = #{intoductionUrl,jdbcType=VARCHAR},
             </if>
         </set>
         where introduction_id = #{introductionId,jdbcType=INTEGER}
     </update>
+
 </mapper>

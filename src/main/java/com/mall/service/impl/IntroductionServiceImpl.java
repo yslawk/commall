@@ -66,11 +66,12 @@ public class IntroductionServiceImpl implements IntroductionService {
 
     @Override
     public PageInfo<Introduction> findAll(int pageNum, int pageSize) {
-        PageHelper.startPage(pageNum, pageNum);
+        PageHelper.startPage(pageNum, pageSize);
         List<Introduction> introductionList = introductionMapper.findAll();
 
         PageInfo<Introduction> pageResult = new PageInfo<>(introductionList);
         return pageResult;
+
     }
 
     @Override

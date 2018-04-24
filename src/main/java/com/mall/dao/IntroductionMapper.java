@@ -22,5 +22,5 @@ public interface IntroductionMapper {
 
     List<Introduction> selectByPrimaryTitle(String introductionTitle);
 
-    int introductionPhoto(@Param("intoductionUrl") String intoductionUrl, @Param("intoductionId") Integer intoductionId);
+    int introductionPhoto(@Param("intoductionUrl") String intoductionUrl, @Param("introductionId") Integer introductionId);
 }

@@ -7,7 +7,7 @@
             <arg column="encyclopedia_genre" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="encyclopedia_title" jdbcType="VARCHAR" javaType="java.lang.String"/>
             <arg column="encyclopedia_introduction" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="encyclopedia_url" jdbcType="VARCHAR" javaType="java.lang.String" />
+            <arg column="encyclopedia_url" jdbcType="VARCHAR" javaType="java.lang.String"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
@@ -33,7 +33,7 @@
         delete from encyclopedia
         where encyclopedia_id = #{encyclopediaId,jdbcType=INTEGER}
     </delete>
-    <insert id="insert" parameterType="com.mall.pojo.Encyclopedia" >
+    <insert id="insert" parameterType="com.mall.pojo.Encyclopedia">
         insert into encyclopedia (encyclopedia_id, encyclopedia_genre,
         encyclopedia_title, encyclopedia_introduction,
         encyclopedia_url)
@@ -41,75 +41,75 @@
         #{encyclopediaTitle,jdbcType=VARCHAR}, #{encyclopediaIntroduction,jdbcType=VARCHAR},
         #{encyclopediaUrl,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.mall.pojo.Encyclopedia" >
+    <insert id="insertSelective" parameterType="com.mall.pojo.Encyclopedia">
         insert into encyclopedia
-        <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="encyclopediaId != null" >
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="encyclopediaId != null">
                 encyclopedia_id,
             </if>
-            <if test="encyclopediaGenre != null" >
+            <if test="encyclopediaGenre != null">
                 encyclopedia_genre,
             </if>
-            <if test="encyclopediaTitle != null" >
+            <if test="encyclopediaTitle != null">
                 encyclopedia_title,
             </if>
-            <if test="encyclopediaIntroduction != null" >
+            <if test="encyclopediaIntroduction != null">
                 encyclopedia_introduction,
             </if>
-            <if test="encyclopediaUrl != null" >
+            <if test="encyclopediaUrl != null">
                 encyclopedia_url,
             </if>
         </trim>
-        <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="encyclopediaId != null" >
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="encyclopediaId != null">
                 #{encyclopediaId,jdbcType=INTEGER},
             </if>
-            <if test="encyclopediaGenre != null" >
+            <if test="encyclopediaGenre != null">
                 #{encyclopediaGenre,jdbcType=VARCHAR},
             </if>
-            <if test="encyclopediaTitle != null" >
+            <if test="encyclopediaTitle != null">
                 #{encyclopediaTitle,jdbcType=VARCHAR},
             </if>
-            <if test="encyclopediaIntroduction != null" >
+            <if test="encyclopediaIntroduction != null">
                 #{encyclopediaIntroduction,jdbcType=VARCHAR},
             </if>
-            <if test="encyclopediaUrl != null" >
+            <if test="encyclopediaUrl != null">
                 #{encyclopediaUrl,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Encyclopedia" >
+    <update id="updateByPrimaryKeySelective" parameterType="com.mall.pojo.Encyclopedia">
         update encyclopedia
-        <set >
-            <if test="encyclopediaGenre != null" >
+        <set>
+            <if test="encyclopediaGenre != null">
                 encyclopedia_genre = #{encyclopediaGenre,jdbcType=VARCHAR},
             </if>
-            <if test="encyclopediaTitle != null" >
+            <if test="encyclopediaTitle != null">
                 encyclopedia_title = #{encyclopediaTitle,jdbcType=VARCHAR},
             </if>
-            <if test="encyclopediaIntroduction != null" >
+            <if test="encyclopediaIntroduction != null">
                 encyclopedia_introduction = #{encyclopediaIntroduction,jdbcType=VARCHAR},
             </if>
-            <if test="encyclopediaUrl != null" >
+            <if test="encyclopediaUrl != null">
                 encyclopedia_url = #{encyclopediaUrl,jdbcType=VARCHAR},
             </if>
         </set>
         where encyclopedia_id = #{encyclopediaId,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Encyclopedia" >
-    update encyclopedia
-    set encyclopedia_genre = #{encyclopediaGenre,jdbcType=VARCHAR},
-      encyclopedia_title = #{encyclopediaTitle,jdbcType=VARCHAR},
-      encyclopedia_introduction = #{encyclopediaIntroduction,jdbcType=VARCHAR},
-      encyclopedia_url = #{encyclopediaUrl,jdbcType=VARCHAR}
-    where encyclopedia_id = #{encyclopediaId,jdbcType=INTEGER}
-  </update>
-
-    <update id="encyclopediaPhoto"  parameterType="com.mall.pojo.Encyclopedia">
+    <update id="updateByPrimaryKey" parameterType="com.mall.pojo.Encyclopedia">
         update encyclopedia
-        <set >
+        set encyclopedia_genre = #{encyclopediaGenre,jdbcType=VARCHAR},
+        encyclopedia_title = #{encyclopediaTitle,jdbcType=VARCHAR},
+        encyclopedia_introduction = #{encyclopediaIntroduction,jdbcType=VARCHAR},
+        encyclopedia_url = #{encyclopediaUrl,jdbcType=VARCHAR}
+        where encyclopedia_id = #{encyclopediaId,jdbcType=INTEGER}
+    </update>
 
-            <if test="encyclopediaUrl != null" >
+    <update id="encyclopediaPhoto" parameterType="com.mall.pojo.Encyclopedia">
+        update encyclopedia
+        <set>
+
+            <if test="encyclopediaUrl != null">
                 encyclopedia_url = #{encyclopediaUrl,jdbcType=VARCHAR},
             </if>
         </set>
